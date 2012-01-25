@@ -1,0 +1,48 @@
+<html>
+    <head>
+    <title>obod</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./bgstretcher.js"></script>
+    <link rel="stylesheet" href="./bgstretcher.css" />
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+        //  Initialize Backgound Stretcher
+        $(document).bgStretcher({
+            images: ['http://i.imgur.com/B6c3J.gif'], imageWidth: 1200, imageHeight: 784
+        }); //end bgs
+        
+    });
+    </script>
+    
+    <style type="text/css">
+        BODY {
+            background: #557A24;
+        }
+        #page {
+            z-index: 2;
+            position: relative;
+            margin: auto;
+            font-size: 12px;
+            color: #AAAAAA;
+            opacity: 0.8;
+            -moz-opacity: 0.8;
+            filter: alpha(opacity=80);
+        }
+        P.larger-size { font-size: 16px; }
+        #page STRONG { color: #FFFFFF; }
+    </style>
+</head>
+
+
+<body>
+    <div id="page">
+        <object style="height: 390px; width: 640px">
+        <param name="movie" value="https://www.youtube.com/v/he0B3uZmGBc?version=3&feature=player_embedded&autoplay=1&feature=player_embedded">
+        <param name="allowFullScreen" value="true">
+        <param name="allowScriptAccess" value="always">
+    <embed src="https://www.youtube.com/v/he0B3uZmGBc?version=3&feature=player_embedded&autoplay=1&feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="NaN" height="25"></object>
+</body>
+
+</html>
